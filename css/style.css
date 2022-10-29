@@ -1,0 +1,434 @@
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* обмеж. контейнер */
+[class*="__container"] {
+	max-width: 1040px;
+	margin: 0 auto;
+	/* border: 5px solid #ac260c; */
+}
+
+body{
+	background-color: rgb(255, 255, 255);
+   font-family: Arial, serif;
+}
+
+.header{
+	background-color: #ba5b1c;
+	padding: 10px;
+}
+
+h1{
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+	letter-spacing: 2px;
+}
+
+/* тут я це роблю щоб прибити футер до низу, у wapper ставлю  
+flex-direction: column; */
+.content{
+	flex: 1 1 auto;
+}
+
+.flex{
+	background-color:rgb(95, 79, 79);
+	padding: 15px 0;
+}
+
+.flex__row {
+	display: flex;
+	justify-content:space-between;
+
+}
+
+.flex__body {
+	color: #fff;
+	text-shadow: 1px 1px 1px #250b04;
+	margin: 0px 0px 0px 0px;
+	padding-right: 30px;
+}
+
+.flex__title {
+	font-size: 50px;
+	margin-bottom: 25px;
+	padding: 0 0 0 60px;
+}
+
+.flex__list li {
+	background: url('..//img/check.svg') 0 0 no-repeat;
+	font-size: 20px;
+	margin-bottom: 15px;
+	line-height: 1.25;
+	padding: 0 0 0 35px;
+}
+.flex__list li:last-child {
+	margin-bottom: 0px;
+}
+
+.flex__image {
+}
+
+
+.about{
+	background-color: #eec3a7;
+}
+
+.about__container {}
+
+.title{
+	color: #fff;
+	font-size: 35px;
+	line-height:40px;
+	margin-bottom:35px ;
+}
+
+.about__row {
+	display: flex;
+	padding: 20px 0;
+}
+
+/* забароняю блоку збыльшуватись зменьшуватися і він має бути 400px */
+.about__image {
+	flex:0 0 400px;
+}
+
+/* тут в мене картинка на старті становить більше чим 400px тому дозволяю їх бути 100% по ширины блоку картинки */
+.about__image img{
+	max-width: 100%;
+}
+
+.about__body {
+	flex:1 1 auto;
+	padding-left: 40px;
+}
+
+.about__title {
+	margin-bottom: 20px;
+}
+
+
+.about__text {
+color: #fff;
+	text-shadow: 1px 1px 1px #250b04;
+	line-height: 30px;
+	margin: 0px 0px 0px 0px;
+}
+
+.about__text p {
+	margin: 0px 0px 25px 0px;
+}
+
+.cards{
+	color: #fff;
+	background-color: #eec3a7;
+	padding: 50px 0 20px 0;
+}
+.cards__container {}
+
+.cards__title {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.title {}
+
+/* !!тут приклад з Женіного каналу на Yuotube */
+.cards__row {
+	display: flex;
+	/* Дозволю що колонки переходили на низню строку */
+	flex-wrap: wrap;
+	margin: 0 -8px;
+}
+
+.cards__column {
+/* Ставлю колонку на половину контейнеру */
+flex: 0 1 50%;
+margin-bottom:30px;
+padding: 0 8px;
+}
+
+.column__item {}
+
+.item {}
+
+.item__row {
+	display: flex;
+}
+
+/* Задаю розмыр для  */
+.item__image {
+	flex: 0 0 200px;
+}
+
+.item__image img {
+	max-width: 100%;
+}
+
+.item__body {
+	flex:  1 1 auto;
+	padding: 0 0 0 15px
+
+}
+
+.item__title {
+	font-size:25px;
+	margin-bottom: 20px;
+}
+
+.item__text {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+
+
+/* Фішка Жені */
+/*  flex контейнер*/
+
+.page{
+background-color: rgba(228, 188, 188, 0.466);
+}
+
+.page__block{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -7.5px;
+}
+.page__title{
+	font-size: 35px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #eb6f71;
+	text-align: center;
+	padding: 15px;
+
+}
+
+/*  flex елемент*/
+.page__column {
+	flex: 0 1 25%;
+	padding: 0px 7.5px;
+	background-color: rgba(230, 152, 152, 0.877);
+}
+
+/* контент */
+.item-column {
+	color: #fff;
+	background-color: #eb6f71;
+	padding: 0 15px;
+	text-align: justify;
+}
+
+.item-column__text{
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 25px;
+	text-shadow: 1px 1px 1px #6f3738;
+}
+
+
+.block{
+	display: flex;
+}
+
+.block__container {}
+
+.block__item {
+	 display:flex; 
+}
+
+
+.block__image{
+	flex: 0 0 300px;
+}
+
+.block__image img {
+	max-width: 100%;
+	max-height:100%;
+}
+
+.block__body{
+	flex: 1 1 auto;
+	padding: 0 0 0 40px;
+	margin: 15px 0;
+	background-color: #eb6f7159;
+	color: #fff;
+}
+
+.block__subtitle {
+	font-size: 35px;
+	text-align: justify;
+
+}
+.block__text {
+	text-align:justify;
+	padding: 20px 0px; 
+	font-size: 25px;
+	line-height: 35px;
+}
+
+
+.number {
+	margin-bottom: 30px;
+}
+
+.number__container {display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #f1da93;
+	border: 4px solid #ba5b1c;
+}
+
+.number__item {
+	display: block;
+	color: #eec3a7;
+	border: 4px solid #e74545eb;
+	padding: 10px;
+	font-size: 25px;
+text-align: center;
+background-color: rgb(209, 157, 157);
+}
+
+.number__item:nth-child(1) {
+	order:1;
+}
+
+.number__item:nth-child(2) {
+	order: 2;
+}
+
+
+.number__item:nth-child(3) {
+	order: 3;
+}
+
+
+.number__item:nth-child(4) {
+	order: 4;
+}
+
+.with{
+	color: rgb(230, 140, 140);
+	font-family:Arial, serif;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 25px;
+}
+
+.with__title {
+	color: rgb(230, 140, 140);}
+
+.with__text {
+	line-height: 130%;
+	text-align: justify;
+}
+.with__text > * :not(:last-child) {
+	margin-bottom: 15px;
+}
+.with__link {
+	display: block;
+	color: #6f3738;
+font-size: 25px;
+padding: 10px 0;}
+
+
+
+.button-card{
+	display: flex;
+	
+}
+
+.button-card__content {
+display: flex;
+margin: 0px -15px;
+background-color: #fff;
+margin-bottom: 20px;
+}
+
+.button-card__column{
+	flex: 0 1 33.333%;
+	padding: 0px 15px;
+}
+.button-card__item{
+	min-height: 100%;
+}
+
+.item-button {
+	display: flex;
+	flex-direction: column;
+	/* gap: 10px; */
+	align-items: flex-start;
+
+}
+
+.item-button__image {
+		margin: 15px 0px;
+}
+
+.item-button__image img {
+	max-width: 100%;
+}
+
+.item-button__text {
+	color: #eb6f71b8;
+	margin-bottom: 15px;
+	text-align: justify;
+	line-height: 130%;
+	flex-grow: 1;
+}
+
+.item-button__link  {
+	background-color: rgb(217, 73, 73);
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+
+.link-about {
+background-color: rgb(114, 231, 60);
+border-radius: 30px;
+color: #fff;	
+display:inline-flex;
+align-items: center;
+gap: 15px;
+font-size: 20px;
+padding: 20px;
+}
+
+.link-about::before {
+	content: "";
+	flex:  0 0 20px;
+	height: 20px;
+	width: 20px;
+	background-color: rgb(240, 126, 126);
+	transform: rotate(360deg);
+}
+
+
+
+
+.footer {
+	background-color: #ba5b1c;
+	padding: 15px;
+}
+
+.footer__container{
+	display: flex;
+	height: 65px;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__text{
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.3px;
+}
